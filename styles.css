@@ -22,6 +22,7 @@ header {
 
 header > h1 {
   text-transform: uppercase;
+  color: var(--primary-color);
   font-size: 20px;
 }
 
@@ -38,6 +39,7 @@ nav > ul {
   list-style-type: none;
   font-size: 15px;
   width: 100%;
+  color: var(--primary-color);
 }
 
 a {
@@ -85,11 +87,13 @@ a {
 
 .hero-our-info > h1 {
   font-size: 28px;
+  color: var(--primary-color);
 }
 
 .hero-our-info > p {
   font-size: 17px;
   font-weight: 500;
+  color: var(--primary-color);
   margin-top: 30px;
 }
 
@@ -148,6 +152,7 @@ button {
   justify-content: center;
   font-weight: 500;
   font-size: 18px;
+  color: var(--primary-color);
 }
 
 #trusted-companies > ul {
@@ -159,11 +164,19 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 85px;
   margin-top: 25px;
-  border: 4px solid #5a87c2;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
+@media (max-width: 650px) {
+  .list-trusted-companies {
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 50px;
+  }
+}
 .spotify-logo,
 .slack-logo,
 .dropbox-logo,
@@ -181,6 +194,7 @@ button {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+  color: var(--primary-color);
 }
 
 /* posiciono las cajas de los testimonios y pongo espacio entre ellos */
@@ -189,6 +203,19 @@ button {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* media querie de las cards de los testimonios, se ponen una debajo de la otra*/
+@media (max-width: 650px) {
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 /* pongo un color de fondo y centro el contenido */
@@ -200,10 +227,24 @@ button {
   text-align: center;
   border-radius: 5px;
 }
+
+@media (max-width: 650px) {
+  #testimonials > .testimonial-cards > article {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
 /* pongo espacio tanto arriba como abajo de los títulos*/
 #testimonials > .testimonial-cards > article > h2 {
   margin-top: 25px;
   margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+#testimonials > .testimonial-cards > article > p {
+  color: var(--primary-color);
+  padding: 15px 15px;
 }
 
 /* imágenes de los testimonios, les pongo un tamaño y visualmente los hago circulares */
@@ -213,7 +254,6 @@ button {
   width: 220px;
   height: 200px;
   border-radius: 100%;
-<<<<<<< HEAD
 }
 
 /* Footer */
@@ -228,7 +268,7 @@ footer {
 #more-about-company {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /*pongo espacios en los títulos */
@@ -241,33 +281,19 @@ footer {
 #more-about-company > div > ul > li {
   margin-top: 15px;
   margin-bottom: 15px;
-=======
->>>>>>> 951809eed6f1bb39fcd44b41c40138dc80510a9f
 }
 
-/* Footer */
+@media (max-width: 600px) {
+  footer > section > div > h2 {
+    font-size: 18px;
+  }
+  footer > section > div > ul {
+    font-size: 15px;
+  }
 
-footer {
-  margin-top: 80px;
-  background-color: var(--secondary-color);
-  padding: 50px;
-}
-
-/* centro los listados y pongo un espacio en la parte superior*/
-#more-about-company {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-
-/*pongo espacios en los títulos */
-#more-about-company > div > h2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-/*pongo espacios en los listados (parte superior e inferior) para que no queden pegados entre ellos */
-#more-about-company > div > ul > li {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  #more-about-company {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
