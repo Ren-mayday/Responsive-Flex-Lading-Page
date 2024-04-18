@@ -213,6 +213,36 @@ button {
   width: 220px;
   height: 200px;
   border-radius: 100%;
+<<<<<<< HEAD
+}
+
+/* Footer */
+
+footer {
+  margin-top: 80px;
+  background-color: var(--secondary-color);
+  padding: 50px;
+}
+
+/* centro los listados y pongo un espacio en la parte superior*/
+#more-about-company {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*pongo espacios en los títulos */
+#more-about-company > div > h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*pongo espacios en los listados (parte superior e inferior) para que no queden pegados entre ellos */
+#more-about-company > div > ul > li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+=======
+>>>>>>> 951809eed6f1bb39fcd44b41c40138dc80510a9f
 }
 
 /* Footer */
